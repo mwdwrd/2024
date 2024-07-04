@@ -1,0 +1,13 @@
+{
+  "lightTheme": {
+    "bgColor": "#ffffff",
+    "fgColor": "#000000"
+  },
+  "darkTheme": {
+    "bgColor": "#000000",
+    "fgColor": "#ffffff"
+  },
+  "/": { "bgColor": "#000000", "fgColor": "#ffffff" },
+  "/about": { "bgColor": "#000000", "fgColor": "#ffffff" },
+  "/work": { "bgColor": "#000000", "fgColor": "#ffffff" }
+}

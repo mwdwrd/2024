@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Circle to Search",
+    "client": "Google",
+    "categories": ["Branding", "Product"],
+    "slug": "google-cts",
+    "image": ""
+  },
+  {
+    "title": "Mothers Day 2024",
+    "client": "Samsung",
+    "categories": ["Campaign"],
+    "slug": "samsung-md",
+    "image": ""
+  },
+  {
+    "title": "SZA x Unstaged",
+    "client": "American Express",
+    "categories": ["Experience", "Music Video"],
+    "slug": "google-cts",
+    "image": ""
+  },
+  {
+    "title": "Brand Launch",
+    "client": "Blip",
+    "categories": ["Branding", "Creative Direction", "Design"],
+    "slug": "blip-launch",
+    "image": ""
+  }
+]
