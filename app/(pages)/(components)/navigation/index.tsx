@@ -2,6 +2,7 @@ import styles from "./navigation.module.scss";
 import Link from "next/link";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import navigation from "@/data/navigation.json";
+import Clock from "@/components/Clock";
 
 const Navigation = () => {
   const mainNav = navigation.map((link) => (
@@ -29,7 +30,7 @@ const Navigation = () => {
             {mainNav}
           </nav>
           <div className={styles.theme}>
-            <ThemeSwitcher />
+            <Clock /> <ThemeSwitcher />
           </div>
         </div>
       </div>

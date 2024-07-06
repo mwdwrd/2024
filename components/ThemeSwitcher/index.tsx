@@ -1,8 +1,9 @@
-"use client";
+"use client"
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import styles from "./ThemeSwitcher.module.scss";
+import { Sun, Moon, Settings } from 'react-feather';
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -20,9 +21,21 @@ const ThemeSwitcher = () => {
     setTheme(nextTheme);
   };
 
+  const renderIcon = () => {
+    switch (theme) {
+      case "light":
+        return <Sun size={16} />;
+      case "dark":
+        return <Moon size={16} />;
+      case "system":
+      default:
+        return <Settings size={16} />;
+    }
+  };
+
   return (
     <div onClick={toggleTheme} className={styles.button}>
-      {theme ? (theme === "system" ? "Auto" : theme.charAt(0).toUpperCase() + theme.slice(1)) : "Loading..."}
+      {renderIcon()}
     </div>
   );
 };

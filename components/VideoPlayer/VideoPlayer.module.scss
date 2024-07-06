@@ -8,9 +8,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 0px;
     border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
 
     &.cinema {
       aspect-ratio: 2.39 / 1; 
@@ -45,22 +43,26 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 2px;
+    justify-content: flex-end;
     padding: calc(var(--gutter) * 2);
     z-index: 1000;
   }
 
   .button {
-    font-size: 12px;
-    font-weight: 600;
+    border: none;
     background-color: var(--foreground);
     color: var(--background);
-    border: none;
-    padding: var(--gutter) calc(var(--gutter) * 1.5);
     border-radius: calc(var(--border-radius) / 2);
-    cursor: pointer;
-    transition: background-color 0.2s, color 0.2s;
 
+    .icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+  
     &:hover {
       background-color: var(--foreground);
       color: var(--background);

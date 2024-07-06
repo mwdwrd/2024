@@ -48,6 +48,13 @@ $font-weight: 300;
   color: var(--foreground);
 }
 
+.theme {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
 .nav {
   display: flex;
   gap: calc(var(--gutter) * 1);

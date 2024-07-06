@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import s from "./VideoPlayer.module.scss";
 import clsx from 'clsx';
+import { Play, Pause, Volume, Volume2 } from 'react-feather'; // Import Feather icons
 
 interface VideoPlayerProps {
   src: string;
@@ -15,7 +16,7 @@ const VideoPlayer = ({ src, format = 'widescreen', autoplay = true, loop = true,
   const [isPlaying, setIsPlaying] = useState(autoplay);
   const [isMuted, setIsMuted] = useState(muted);
   const [isLooping, setIsLooping] = useState(loop);
-  const [showControls, setShowControls] = useState(false);
+  const [showControls, setShowControls] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const togglePlay = () => {
@@ -71,12 +72,16 @@ const VideoPlayer = ({ src, format = 'widescreen', autoplay = true, loop = true,
         initial="hidden"
         transition={{ duration: 0.5, ease: "easeInOut" }} // Added easeInOut for a more organic feel
       >
-        <button onClick={togglePlay} className={clsx(s.button, s.pause)}>
-          {isPlaying ? 'Pause' : 'Play'}
-        </button>
-        <button onClick={toggleMute} className={clsx(s.button, s.mute)}>
-          {isMuted ? 'Unmute' : 'Mute'}
-        </button>
+        <div onClick={togglePlay} className={clsx(s.button, s.pause)}>
+          <div className={s.icon}>
+            {isPlaying ? <Pause size={24} /> : <Play size={24} />}
+          </div>
+        </div>
+        <div onClick={toggleMute} className={clsx(s.button, s.mute)}>
+          <div className={s.icon}>
+            {isMuted ? <Volume2 size={24} /> : <Volume size={24} />}
+          </div>
+        </div>
       </motion.div>
     </div>
   );
