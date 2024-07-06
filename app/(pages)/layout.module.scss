@@ -27,4 +27,11 @@ $header-height: 80px;
     padding: 0 calc(var(--gutter) * 4);
     margin-top: $header-height;
   }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    background-color: var(--background);
+  }
 }

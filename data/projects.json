@@ -2,6 +2,7 @@
   {
     "title": "Circle to Search",
     "client": "Google",
+    "description": "We branded Google's latest and greatest AI-enabled consumer innovation: “Circle to Search” to ensure the innovation was clearly attributable to Google, and that every time it was featured in marketing — which it was by many partners around the world (e.g., Samsung, Verizon, Motorola, OnePlus etc) — it became an ad for Google. The branded gesture is now influencing the actual product UI and Google's most iconic product: search.",
     "categories": ["Branding", "Product"],
     "slug": "google-cts",
     "image": "google-cts.png"
@@ -10,6 +11,7 @@
     "title": "Mothers Day 2024",
     "client": "Samsung",
     "categories": ["Campaign"],
+    "description": "",
     "slug": "samsung-md",
     "image": ""
   },
@@ -17,6 +19,7 @@
     "title": "SZA x Unstaged",
     "client": "American Express",
     "categories": ["Experience", "Music Video"],
+    "description": "",
     "slug": "google-cts",
     "image": ""
   },
@@ -24,6 +27,7 @@
     "title": "Brand Launch",
     "client": "Blip",
     "categories": ["Branding", "Creative Direction", "Design"],
+    "description": "",
     "slug": "blip-launch",
     "image": ""
   }

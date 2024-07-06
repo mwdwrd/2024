@@ -24,9 +24,6 @@ const Navigation = () => {
       </div>
 
       <div className={styles.right}>
-        <div className={styles.position}>
-          Creative Services
-        </div>
         <div className={styles.navMenu}>
           <nav className={styles.nav}>
             {mainNav}

@@ -1,6 +1,6 @@
 import styles from "./page.module.scss";
-import ProjectTile from "@/components/ProjectTile";
 import projects from "@/data/projects.json"
+import Projects from "./(components)/projects";
 
 const Home = (): JSX.Element => {
   return (
@@ -18,9 +18,7 @@ const Home = (): JSX.Element => {
           <h2 className={styles.title}>Projects</h2>
         </div>
         <div className={styles.projects}>
-          {projects.map((project, i) => (
-            <ProjectTile key={i} index={i + 1} {...project} />
-          ))}
+          <Projects projects={projects} />
         </div>
       </div>
     </div>

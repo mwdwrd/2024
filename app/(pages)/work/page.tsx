@@ -1,5 +1,12 @@
-const AboutIndex = (): JSX.Element => {
-  return <>Work</>;
+import Projects from "../(components)/projects";
+import projects from "@/data/projects.json"; 
+
+const WorkIndex = (): JSX.Element => {
+  return (
+    <>
+      <Projects projects={projects} />
+    </>
+  );
 }
 
-export default AboutIndex;
+export default WorkIndex;

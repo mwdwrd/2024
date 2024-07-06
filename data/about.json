@@ -1,0 +1,104 @@
+{
+  "tldr": "<p>TLDR; A digital maker who connects business problems with culturally contextual answers, leading the work and teams to platforms that challenge convention and move the needle. An Emmy-nominated multi-disciplinary creative who works at the convergence of storytelling, design and new technologies.</p>",
+  "bio": "<p>Matty, an Emmy-nominated Creative Director based in New York, has built a 15+ year career at the intersection of design, storytelling, and cutting-edge technology. With an unyielding passion for innovation, Matty has made a name for himself across various creative industries, earning an Emmy nomination for 'Food Interrupted,' a TV series that explores the transformation of America's food system.</p><p>A devoted philanthropist, Matty founded MerchAid, a platform that pairs artists and designers with local businesses and nonprofits to create exclusive merchandise. To date, MerchAid has raised over $500,000 for Covid relief, BLM, and AAPI support initiatives. Matty's creative prowess extends to the music industry, where he designed SZA's first sold-out NFT collection and live-stream performance with Travis Scott, celebrating the anniversary of her debut studio album, CTRL.</p><p>Matty is also the mind behind HELLVETICA, the award-winning typeface that took the internet by storm. His expertise as a Web3 Creator has led to the creation, coding, and nurturing of four sold-out NFT collections, including one of the first derivative CCO projects in the space. These collections span generative art, music, and PFPs, with a combined secondary market trade volume exceeding 2.2 million USD.</p><p>Matty's growing client list includes world-renowned companies such as Samsung, American Express, Nike, Meta, Budweiser, National Geographic, New Balance, MailChimp, and Marriott International. With his unique blend of creativity, vision, and expertise, Matty continues to push the boundaries of design and technology, creating meaningful experiences and inspiring change.</p>",
+  "experience": [
+    {
+      "company": "R/GA",
+      "title": "Creative Director",
+      "started": "2019",
+      "ended": "2023",
+      "url": "https://rga.com/",
+      "location": "New York, USA",
+      "description": "Led teams of visual and experience designers in the creative execution of business problems forSamsung Global, Verizon, Nike, Fierce Financial, Mailchimp and more. Lead web3 creative andmetaverse/nft SME for the agency globally."
+    },
+    {
+      "company": "Merch Aid",
+      "title": "Co-Founder",
+      "started": "2020",
+      "ended": "2021",
+      "url": "https://studioabout.world/",
+      "location": "New York, USA",
+      "description": "An initiative that helps small businesses forced to close or significantly alter their business model due tothe COVID-19 pandemic – from bars to barbershops – by giving locals a new way to support them. We team up artists and designers with small businesses, create exclusive merchandise together, andsell it on this site. 100% of profits go back to the businesses."
+    },
+    {
+      "company": "Anomaly (ACE)",
+      "title": "Design Director",
+      "started": "2016",
+      "ended": "2019",
+      "url": "https://acecontent.com/",
+      "location": "New York, USA"
+    },
+    {
+      "company": "TBWA/Australia",
+      "title": "Art Director",
+      "started": "2014",
+      "ended": "2015",
+      "url": "https://www.tbwa.com.au/",
+      "location": "Sydney, Australia"
+    },
+    {
+      "company": "Deus Ex Machina",
+      "title": "Art Director / Designer",
+      "started": "2009",
+      "ended": "2014",
+      "url": "https://deuscustoms.com",
+      "location": "Sydney, Australia"
+    },
+    {
+      "company": "Monster Children",
+      "title": "Designer",
+      "started": "2007",
+      "ended": "2010",
+      "url": "https://www.monsterchildren.com/",
+      "location": "Sydney, Australia"
+    }
+  ],
+  "clients": [
+    {
+      "name": "American Express",
+      "logo": "amex.png"
+    },
+    {
+      "name": "Samsung",
+      "logo": "samsung.png"
+    },
+    {
+      "name": "Nike",
+      "logo": "nike.png"
+    },
+    {
+      "name": "RayBan",
+      "logo": "rayban.png"
+    }
+  ],
+  "contact": [
+    {
+      "name": "Phone",
+      "label": "+1 (646) 571-9510",
+      "url": "tel:6465719510"
+    },
+    {
+      "name": "Email",
+      "label": "mwdwrd@gmail.com",
+      "url": "mailto:mwdwrd@gmail.com"
+    }
+  ],
+  "social": [
+    {
+      "name": "twitter ",
+      "url": "https://twitter.com/allthegweiup"
+    },
+    {
+      "name": "instagram ",
+      "url": "https://www.instagram.com/matty.eth"
+    },
+    {
+      "name": "linkedin ",
+      "url": "https://www.linkedin.com/in/mwdwrd"
+    },
+    {
+      "name": "github ",
+      "url": "https://github.com/mwdwrd"
+    }
+  ]
+}

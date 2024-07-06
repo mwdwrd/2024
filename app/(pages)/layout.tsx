@@ -1,6 +1,7 @@
 import s from "./layout.module.scss";
 import { Lenis } from "./(components)/lenis";
 import Navigation from "./(components)/navigation";
+import Footer from "./(components)/footer";
 
 export default function PageLayout({
   children,
@@ -17,6 +18,9 @@ export default function PageLayout({
         <main role="main" className={s.main}>
           {children}
         </main>
+        <footer className={s.footer}>
+          <Footer />
+        </footer>
       </div>
     </>
   );

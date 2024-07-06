@@ -1,0 +1,69 @@
+.wrapper {
+  position: relative;
+  .videoWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+
+    &.cinema {
+      aspect-ratio: 2.39 / 1; 
+    }
+    &.widescreen {
+      aspect-ratio: 16 / 9;
+    }
+    &.standard {
+      aspect-ratio: 4 / 3;
+    }
+    &.photo {
+      aspect-ratio: 6 / 4;
+    }
+    &.square {
+      aspect-ratio: 1 / 1;
+    }
+
+    .video {
+      cursor: auto;
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      display: block;
+      object-fit: cover;
+      object-position: 50% 50%;
+      position: relative;
+    }
+  }
+  .controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--gutter) * 2);
+    z-index: 1000;
+  }
+
+  .button {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--foreground);
+    color: var(--background);
+    border: none;
+    padding: var(--gutter) calc(var(--gutter) * 1.5);
+    border-radius: calc(var(--border-radius) / 2);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+      background-color: var(--foreground);
+      color: var(--background);
+    }
+  }
+}
