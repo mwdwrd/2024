@@ -1,5 +1,6 @@
 [
+  { "href": "/", "label": "Index" },
   { "href": "/work", "label": "Work" },
-  { "href": "/playground", "label": "Playground" },
+  { "href": "/projects", "label": "Projects" },
   { "href": "/about", "label": "About" }
 ]

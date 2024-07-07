@@ -31,12 +31,27 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --font-sans: 'Aspekta', sans-serif;
 
+  --font-size-body: 16px;
+  --font-weight-body: 300;
+  --font-size-heading: 72px;
+  --font-weight-heading: 500;
+  --font-size-nav: 15px;
+  --font-weight-nav: 400;
+  --font-size-tile: 15px;
+  --font-weight-tile: 300;
+
   // Colors
   --foreground: #000000;
   --foreground-rgba: 0, 0, 0;
   --background: #ffffff;
   --background-rgba: 255, 255, 255;
+
+  --nav-color: #999999;
+  --nav-active-color: #000000;
+
+
 }
+
 
 // Dark Theme
 [data-theme='dark'] {
@@ -45,6 +60,9 @@
   --foreground: white;
   --foreground-rgba: 255, 255, 255;
   --border-color: #333;
+
+  --nav-color: rgb(107, 107, 107);
+  --nav-active-color: white;
 }
 
 

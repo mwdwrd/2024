@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Circle to Search",
+    "client": "Google",
+    "headline": "Branding Google's latest and greatest AI-enabled consumer innovation",
+    "description": "We branded Google's latest and greatest AI-enabled consumer innovation: “Circle to Search” to ensure the innovation was clearly attributable to Google, and that every time it was featured in marketing — which it was by many partners around the world (e.g., Samsung, Verizon, Motorola, OnePlus etc) — it became an ad for Google. The branded gesture is now influencing the actual product UI and Google's most iconic product: search.",
+    "categories": ["Branding", "Product"],
+    "slug": "google-cts",
+    "thumb": {
+      "type": "video",
+      "src": "/cts-thumb.mov"
+    }
+  },
+  {
+    "title": "Hellvetica",
+    "client": "R/GA",
+    "headline": "Helvetica, but with hellish kerning",
+    "description": "As an agency with a long history in design, R/GA sent one of the world's most-loved fonts to hell for Halloween. Hellvetica: Helvetica, but with hellish kerning. The font was downloaded over 7,300 times, and used to create over 76,000 designs. With 540,000 unique views, and over 210,000,000 impressions, Hellvetica took the internet by storm.Hellvetica was featured in the top publications around the worldsuch as Wired Magazine, Fast Company and DesignBoom. This was a self initiated project with Zac Roif and was supported by R/GA",
+    "categories": ["Activation"],
+    "slug": "hellvetica",
+    "thumb": {
+      "type": "video",
+      "src": "/hellvetica.mov"
+    }
+  },
+  {
+    "title": "SZA x Unstaged",
+    "client": "American Express",
+    "headline": "An Interactive Live Stream with SZA and Friends",
+    "description": "In partnership with director, Alfred Marroquin, our approach broke out of the confinement of 2020 and entered an ethereal new world. It was an homage to SZA's first album, CTRL, and a celebration of music, spirit, and the earth itself. Captured live and in one take, it featured three chapters, 15 tracks, and cameos by Isaiah Rashad and Travis Scott — who became a buzzworthy surprise after SZA tweeted an invitation to join her just days before shooting. We released behind the scenes NFT's that sold out immediately on our partner platform, fanaply.com",
+    "categories": ["Experience", "Music Video"],
+    "slug": "google-cts",
+    "thumb": {
+      "type": "default",
+      "src": "/cts-thumb.mov"
+    }
+  },
+  {
+    "title": "Brand Launch",
+    "client": "Blip",
+    "categories": ["Branding", "Creative Direction", "Design"],
+    "description": "",
+    "slug": "blip-launch",
+    "thumb": {
+      "type": "default",
+      "src": "/cts-thumb.mov"
+    }
+  }
+]

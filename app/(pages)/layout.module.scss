@@ -9,9 +9,7 @@ $header-height: 80px;
   overflow: hidden;
 
   .header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     height: $header-height;
     text-align: center;
@@ -25,7 +23,6 @@ $header-height: 80px;
     display: flex;
     flex-direction: column;
     padding: 0 calc(var(--gutter) * 4);
-    margin-top: $header-height;
   }
 
   .footer {

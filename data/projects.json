@@ -1,49 +1,12 @@
 [
   {
-    "title": "Circle to Search",
-    "client": "Google",
-    "description": "We branded Google's latest and greatest AI-enabled consumer innovation: “Circle to Search” to ensure the innovation was clearly attributable to Google, and that every time it was featured in marketing — which it was by many partners around the world (e.g., Samsung, Verizon, Motorola, OnePlus etc) — it became an ad for Google. The branded gesture is now influencing the actual product UI and Google's most iconic product: search.",
+    "title": "Chunks",
+    "headline": "Chunks World is an ongoing generative PFP project that brings 48x48x48 characters to life. Each Chunk part is designed as 'plates' and then assembled together via code to create a unique character. The project is built in Python and uses the Blender API to render the characters. I started this project 2 years ago, and have since launched 2 sold out NFT collections (amasing over 2 million USD in trade volume) using this generative process and code as the engine. I designed and coded all components of this system.",
     "categories": ["Branding", "Product"],
-    "slug": "google-cts",
+    "slug": "chunks-world",
     "thumb": {
       "type": "video",
       "src": "/cts-thumb.mov"
     }
-  },
-  {
-    "title": "Hellvetica",
-    "client": "R/GA",
-    "description": "As an agency with a long history in design, R/GA sent one of the world’s most-loved fonts to hell for Halloween. Hellvetica: Helvetica, but with hellish kerning. The font was downloaded over 7,300 times, and used to create over 76,000 designs. With 540,000 unique views, and over 210,000,000 impressions, Hellvetica took the internet by storm.Hellvetica was featured in the top publications around the worldsuch as Wired Magazine, Fast Company and DesignBoom. This was a self initiated project with Zac Roif and was supported by R/GA",
-    "categories": ["Activation"],
-    "slug": "hellvetica",
-    "thumb": {
-      "type": "video",
-      "src": "/hellvetica.mov"
-    }
-  },
-  {
-    "title": "Mothers Day 2024",
-    "client": "Samsung",
-    "categories": ["Campaign"],
-    "description": "",
-    "slug": "samsung-md",
-    "thumb": {
-      "type": "video",
-      "src": "/md2024.webm"
-    }
-  },
-  {
-    "title": "SZA x Unstaged",
-    "client": "American Express",
-    "categories": ["Experience", "Music Video"],
-    "description": "",
-    "slug": "google-cts"
-  },
-  {
-    "title": "Brand Launch",
-    "client": "Blip",
-    "categories": ["Branding", "Creative Direction", "Design"],
-    "description": "",
-    "slug": "blip-launch"
   }
 ]

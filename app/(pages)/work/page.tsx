@@ -1,17 +1,18 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Projects from "../(components)/projects";
-import projects from "@/data/projects.json";
+import workData from "@/data/work.json";
 import s from "./page.module.scss";
 import Filters from "./(components)/filters";
+import Tile from "@/components/Tile";
+import Block from "@/components/Block";
 
 const WorkIndex = (): JSX.Element => {
   const [categories, setCategories] = useState<{ [category: string]: number }>({});
   const [active, setActive] = useState<string>("All");
 
   useEffect(() => {
-    const counts = projects.reduce<{ [category: string]: number }>((acc, project) => {
+    const counts = workData.reduce<{ [category: string]: number }>((acc, project) => {
       project.categories.forEach((cat) => {
         if (!acc[cat]) {
           acc[cat] = 1;
@@ -22,28 +23,46 @@ const WorkIndex = (): JSX.Element => {
       return acc;
     }, {});
   
-    const categoriesWithAll = { 'All': projects.length, ...counts };
+    const categoriesWithAll = { 'All': workData.length, ...counts };
   
     setCategories(categoriesWithAll);
   }, []);
 
   const filteredProjects = useMemo(() => {
     return active === "All"
-      ? projects
-      : projects.filter((project) => project.categories.includes(active));
+      ? workData
+      : workData.filter((tile) => tile.categories.includes(active));
   }, [active]);
 
   return (
     <>
-      <div className={s.header}>
-        <h2 className={s.title}>Work</h2>
-      </div>
-      <div className={s.filters}>
-        <Filters categories={categories} active={active} onCategoryChange={(category) => setActive(category)} />
-      </div>
-      <div className={s.projects}>
-        <Projects projects={filteredProjects} />
-      </div>
+      
+      <Block first>
+        <div className={s.title}>
+          <h2 className={s.heading}>Work</h2>
+        </div>
+        <div className={s.filters}>
+          <Filters categories={categories} active={active} onCategoryChange={(category) => setActive(category)} />
+        </div>
+      </Block>
+
+      <Block last>
+        <div className={s.projects}>
+          {filteredProjects.map((work, i) => (
+            <Tile
+              key={i}
+              index={i + 1}
+              title={work.title}
+              url={`/work/${work.slug}`}
+              thumb={work.thumb}
+              format="widescreen"
+              client={work.client}
+              categories={work.categories}
+            />
+          ))}
+        </div>
+      </Block>
+  
     </>
   );
 };

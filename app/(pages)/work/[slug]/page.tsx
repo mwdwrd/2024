@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
-import projects from '@/data/projects.json';
+import workData from "@/data/work.json"
 import s from './project.module.scss';
 import clsx from 'clsx';
 import Header from './(components)/header';
@@ -11,7 +11,7 @@ const Project = ({ params: { slug } }: { params: { slug: string } }): JSX.Elemen
   const [project, setProject] = useState<IProject | null>(null);
 
   useEffect(() => {
-    setProject(projects.find(p => p.slug === slug) || null);
+    setProject(workData.find(p => p.slug === slug) || null);
   }, [slug]);
 
   if (!project) return <div>Project not found</div>;

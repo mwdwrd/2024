@@ -1,0 +1,57 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gutter) * 2);
+
+  .content {
+    font-size: var(--font-size-tile);
+    font-weight: var(--font-weight-tile);
+    letter-spacing: -0.01rem;
+    display: flex;
+    flex-direction: row;
+    gap: var(--gutter);
+
+    .title, .client, .cats {
+      font-size: var(--font-size-tile);
+      font-weight: var(--font-weight-tile);
+    }
+    .cats, .client {
+      opacity: 0.5;
+    }
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: calc(var(--border-radius) / 2);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    position: relative;
+    cursor: pointer;
+
+    &.cinema {
+      aspect-ratio: 21/9;
+    }
+    &.widescreen {
+      aspect-ratio: 16/9;
+    }
+    &.standard {
+      aspect-ratio: 4/3;
+    }
+    &.photo {
+      aspect-ratio: 3/2;
+    }
+    &.square {
+      aspect-ratio: 1/1;
+    }
+
+    video {
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
