@@ -13,11 +13,11 @@ const Header = ({ client, title, description }: HeaderProps) => {
       <div className={s.row}>
         <div className={clsx(s.col, s.sm)} />
         <div className={clsx(s.col, s.titleBlock)}>
-          <h2 className={s.heading}>{title}</h2>
+          <h2 className={s.heading}>Branding a gesture<br />for +3 billion users</h2>
         </div>
       </div>
       <div className={s.row}>
-        <div className={clsx(s.col, s.sm)}>About the Project</div>
+        <div className={clsx(s.col, s.sm)} />
         <div className={clsx(s.col)}>
           <div className={s.desc} dangerouslySetInnerHTML={{ __html: description }} />
         </div>

@@ -43,29 +43,47 @@
     left: 0;
     width: 100%;
     display: flex;
-    gap: 2px;
+    gap: 0;
     justify-content: flex-end;
-    padding: calc(var(--gutter) * 2);
+    padding: calc(var(--gutter));
     z-index: 1000;
+  }
+
+  .buttonGroup {
+    display: flex;
+    gap: 0;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 1px;
+    overflow: hidden;
+    border-radius: calc(var(--border-radius) / 2);
+    
   }
 
   .button {
     border: none;
-    background-color: var(--foreground);
-    color: var(--background);
-    border-radius: calc(var(--border-radius) / 2);
-
+    background-color: rgba(var(--background-rgba), 1);
+    color: rgba(var(--foreground-rgba), 1);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+    
     .icon {
-      width: 24px;
-      height: 24px;
       display: flex;
       justify-content: center;
       align-self: center;
     }
   
     &:hover {
-      background-color: var(--foreground);
-      color: var(--background);
+      cursor: pointer;
+      color: rgba(var(--foreground-rgba), 0.5);
     }
   }
 }

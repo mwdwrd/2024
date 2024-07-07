@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import styles from "./ThemeSwitcher.module.scss";
-import { Sun, Moon, Settings } from 'react-feather';
+import { Sun, Moon } from 'react-feather';
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -16,21 +16,21 @@ const ThemeSwitcher = () => {
   if (!mounted) return null;
 
   const toggleTheme = () => {
-    const currentTheme = theme ?? "system";
-    const nextTheme = currentTheme === "system" ? "dark" : currentTheme === "dark" ? "light" : "system";
+    // Determine if the system prefers a dark mode
+    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Determine the current theme or fallback to system preference
+    const currentTheme = theme === "light" || theme === "dark" ? theme : prefersDarkMode ? "dark" : "light";
+    // Toggle theme based on the current setting
+    const nextTheme = currentTheme === "dark" ? "light" : "dark";
     setTheme(nextTheme);
   };
 
   const renderIcon = () => {
-    switch (theme) {
-      case "light":
-        return <Sun size={16} />;
-      case "dark":
-        return <Moon size={16} />;
-      case "system":
-      default:
-        return <Settings size={16} />;
-    }
+    // Determine if the system prefers a dark mode
+    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Determine the current theme or fallback to system preference
+    const currentTheme = theme === "light" || theme === "dark" ? theme : prefersDarkMode ? "dark" : "light";
+    return currentTheme === "dark" ? <Sun size={16} /> : <Moon size={16} />;
   };
 
   return (

@@ -19,19 +19,25 @@ const Project = ({ params: { slug } }: { params: { slug: string } }): JSX.Elemen
   return (
     <div className={s.wrapper}>
 
+      <Header {...project} />
+
       <div className={s.row}>
         <div className={clsx(s.col, s.video)}>
           <VideoPlayer
-            src={"google-cts"}
+            src={{
+              mp4: "https://ofmkdsqxwtmohuvy.public.blob.vercel-storage.com/google-cts-EGkhL5mdOAkri29fwvdfdtRii8oZyd.mp4",
+            }}
             format="widescreen"
+            controls="hover"
             autoplay={true}
+            clickable={true}
             muted={true}
             loop={true}
           />
         </div>
       </div>
 
-      <Header {...project} />
+      
 
     </div>
   );

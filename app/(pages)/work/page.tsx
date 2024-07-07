@@ -1,10 +1,13 @@
 import Projects from "../(components)/projects";
 import projects from "@/data/projects.json"; 
+import s from "./page.module.scss";
 
 const WorkIndex = (): JSX.Element => {
   return (
     <>
-      <Projects projects={projects} />
+      <div className={s.projects}>
+        <Projects projects={projects} />
+      </div>
     </>
   );
 }

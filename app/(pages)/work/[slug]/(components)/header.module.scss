@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   gap: calc(var(--gutter) * 2);
-  // border-top: 1px solid var(--border-color);
-  padding-top: calc(var(--gutter) * 2);
+  border-top: 1px solid var(--border-color);
+  padding: calc(var(--gutter) * 8) 0;
 
   .row {
     display: flex;
@@ -17,7 +17,7 @@
       text-align: left;
 
       &.sm {
-        flex: calc(4/12);
+        flex: calc(2/12);
       }
     }
   }

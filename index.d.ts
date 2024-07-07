@@ -4,5 +4,8 @@ interface IProject {
   categories: string[];
   description: string;
   slug: string;
-  image: string;
+  thumb?: {
+    type: string;
+    src: string;
+  };
 }

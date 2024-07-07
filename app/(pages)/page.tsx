@@ -1,21 +1,29 @@
 import styles from "./page.module.scss";
 import projects from "@/data/projects.json"
 import Projects from "./(components)/projects";
+import VideoPlayer from "@/components/VideoPlayer";
 
 const Home = (): JSX.Element => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.block}>
         <div className={styles.coverVideo}>
-          {/* <video autoPlay loop muted className={styles.video}>
-            <source src="/seg1.mp4" type="video/mp4" />
-            <source src="/seg1.webm" type="video/webm" />
-          </video> */}
+          {/* <VideoPlayer
+            src={{
+              mp4: "/seg1.mp4",
+              webm: "/seg1.webm",
+            }}
+            format="widescreen"
+            autoplay={true}
+            clickable={false}
+            muted={true}
+            loop={true}
+          /> */}
         </div>
       </div>
       <div className={styles.block}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Projects</h2>
+          <h2 className={styles.title}>Work</h2>
         </div>
         <div className={styles.projects}>
           <Projects projects={projects} />

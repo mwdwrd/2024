@@ -33,13 +33,17 @@
 
   // Colors
   --foreground: #000000;
+  --foreground-rgba: 0, 0, 0;
   --background: #ffffff;
+  --background-rgba: 255, 255, 255;
 }
 
 // Dark Theme
 [data-theme='dark'] {
   --background: black;
+  --background-rgba: 0, 0, 0;
   --foreground: white;
+  --foreground-rgba: 255, 255, 255;
   --border-color: #333;
 }
 
