@@ -27,7 +27,6 @@ const ProjectTile = (project: ProjectTileProps): JSX.Element => {
     >
       <div
         className={styles.project}
-        onClick={() => router.push(`/work/${project.slug}`)}
       >
         <div className={styles.content}>
           <h3 className={styles.client}>{project.client}</h3>
@@ -39,7 +38,7 @@ const ProjectTile = (project: ProjectTileProps): JSX.Element => {
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ ease: "anticipate", duration: 0.75 }}
         >
-          <div className={styles.image}>
+          <div className={styles.image} onClick={() => router.push(`/work/${project.slug}`)}>
             {project.thumb &&
               <>
                 {project.thumb.type === "image" &&

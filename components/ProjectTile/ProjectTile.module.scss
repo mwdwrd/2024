@@ -30,6 +30,11 @@ $line-height: 120%;
     overflow: hidden;
     border: 1px solid var(--border-color);
     position: relative;
+    cursor: pointer;
+
+    video {
+      cursor: pointer;
+    }
 
     img {
       width: 100%;
