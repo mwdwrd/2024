@@ -45,7 +45,7 @@ const Tile = ({
           transition={{ ease: "anticipate", duration: 0.75 }}
         >
           <div className={clsx(s.image, s[format])} onClick={() => router.push(url)}>
-            <Thumb type={thumb.type} src={thumb.src} alt={title} />
+            <Thumb type={thumb.type} src={thumb.src} alt={title} format={format} />
           </div>
         </motion.div>
       </div>

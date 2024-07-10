@@ -1,14 +1,16 @@
 import React, { useRef } from "react";
 import s from "./Thumb.module.scss";
 import Image from "next/image";
+import clsx from "clsx";
 
 interface ThumbProps {
   src: string;
   type: "image" | "video" | string;
   alt: string;
+  format: "cinema" | "widescreen" | "standard" | "photo" | "square";
 }
 
-const Thumb = ({ src, type, alt }: ThumbProps) => {
+const Thumb = ({ src, type, alt, format = "standard" }: ThumbProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const playVideo = () => {
@@ -33,7 +35,7 @@ const Thumb = ({ src, type, alt }: ThumbProps) => {
 
   return (
     <div
-      className={s.wrapper}
+      className={clsx(s.wrapper, s[format])}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

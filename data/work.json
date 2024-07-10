@@ -2,14 +2,49 @@
   {
     "title": "Circle to Search",
     "client": "Google",
-    "headline": "Branding Google's latest and greatest AI-enabled consumer innovation",
+    "headline": "Branding a gesture that's changing the way we search.",
     "description": "We branded Google's latest and greatest AI-enabled consumer innovation: “Circle to Search” to ensure the innovation was clearly attributable to Google, and that every time it was featured in marketing — which it was by many partners around the world (e.g., Samsung, Verizon, Motorola, OnePlus etc) — it became an ad for Google. The branded gesture is now influencing the actual product UI and Google's most iconic product: search.",
     "categories": ["Branding", "Product"],
     "slug": "google-cts",
     "thumb": {
       "type": "video",
       "src": "/cts-thumb.mov"
-    }
+    },
+    "modules": [
+      [
+        {
+          "type": "video",
+          "src": {
+            "webm": "/google-cts.webm",
+            "mp4": "/google-cts.mp4"
+          },
+          "format": "widescreen",
+          "alt": ""
+        }
+      ],
+      [
+        {
+          "type": "image",
+          "src": "/cts-1.png",
+          "format": "widescreen",
+          "alt": ""
+        }
+      ],
+      [
+        {
+          "type": "image",
+          "src": "/cts-2.png",
+          "format": "widescreen",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "src": "/cts-4.png",
+          "format": "widescreen",
+          "alt": ""
+        }
+      ]
+    ]
   },
   {
     "title": "Hellvetica",
@@ -21,7 +56,19 @@
     "thumb": {
       "type": "video",
       "src": "/hellvetica.mov"
-    }
+    },
+    "modules": [
+      [
+        {
+          "type": "video",
+          "src": {
+            "mp4": "/hellvetica.mov"
+          },
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ]
+    ]
   },
   {
     "title": "SZA x Unstaged",
@@ -29,11 +76,37 @@
     "headline": "An Interactive Live Stream with SZA and Friends",
     "description": "In partnership with director, Alfred Marroquin, our approach broke out of the confinement of 2020 and entered an ethereal new world. It was an homage to SZA's first album, CTRL, and a celebration of music, spirit, and the earth itself. Captured live and in one take, it featured three chapters, 15 tracks, and cameos by Isaiah Rashad and Travis Scott — who became a buzzworthy surprise after SZA tweeted an invitation to join her just days before shooting. We released behind the scenes NFT's that sold out immediately on our partner platform, fanaply.com",
     "categories": ["Experience", "Music Video"],
-    "slug": "google-cts",
+    "slug": "amex",
     "thumb": {
       "type": "default",
       "src": "/cts-thumb.mov"
-    }
+    },
+    "modules": [
+      [
+        {
+          "type": "video",
+          "src": {
+            "mp4": "/google-cts.mp4"
+          },
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ],
+      [
+        {
+          "type": "image",
+          "src": "/3.jpeg",
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        },
+        {
+          "type": "image",
+          "src": "/4.png",
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ]
+    ]
   },
   {
     "title": "Brand Launch",
@@ -44,6 +117,32 @@
     "thumb": {
       "type": "default",
       "src": "/cts-thumb.mov"
-    }
+    },
+    "modules": [
+      [
+        {
+          "type": "video",
+          "src": {
+            "mp4": "/google-cts.mp4"
+          },
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ],
+      [
+        {
+          "type": "image",
+          "src": "/3.jpeg",
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        },
+        {
+          "type": "image",
+          "src": "/4.png",
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ]
+    ]
   }
 ]

@@ -33,7 +33,9 @@
 .divider,
 .clock {
   font-size: var(--font-size-nav);
+  line-height: var(--font-size-nav);
   font-weight: var(--font-weight-nav);
+  letter-spacing: var(--font-spacing-nav);
   margin: 0;
   padding: 0;
   position: relative;
