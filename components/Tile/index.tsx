@@ -5,6 +5,7 @@ import s from "./Tile.module.scss";
 import { motion } from "framer-motion";
 import Thumb from "../Thumb";
 import clsx from "clsx";
+import AnimatedThumb from "../AnimatedThumb";
 
 interface TileProps extends ITile {
   index: number;

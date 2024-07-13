@@ -71,6 +71,62 @@
     ]
   },
   {
+    "title": "Rancho West",
+    "client": "Rancho West",
+    "headline": "A new kind of Western",
+    "description": "",
+    "categories": ["Branding", "Creative Direction", "Design"],
+    "slug": "rancho-west",
+    "thumb": {
+      "type": "images",
+      "src": [
+        "/rwest1.png",
+        "/rwest3.png",
+        "/rwest0.png",
+        "/rwest2.png"
+      ]
+    },
+    "modules": []
+  },
+  {
+    "title": "Queens Of The Future",
+    "client": "Nike",
+    "headline": "",
+    "description": "",
+    "categories": ["Campaign", "Art Direction"],
+    "slug": "nike",
+    "thumb": {
+      "type": "video",
+      "src": "/cts-thumb.mov"
+    },
+    "modules": [
+      [
+        {
+          "type": "video",
+          "src": {
+            "mp4": "/google-cts.mp4"
+          },
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ],
+      [
+        {
+          "type": "image",
+          "src": "/3.jpeg",
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        },
+        {
+          "type": "image",
+          "src": "/4.png",
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ]
+    ]
+  },
+  {
     "title": "SZA x Unstaged",
     "client": "American Express",
     "headline": "An Interactive Live Stream with SZA and Friends",
