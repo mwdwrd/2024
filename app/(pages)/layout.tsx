@@ -11,13 +11,13 @@ export default function PageLayout({
     <>
       <Lenis root />
       <div className="bg-background text-foreground min-h-screen flex flex-col overflow-hidden">
-        <header className="flex flex-col items-start p-6">
+        <header className="flex flex-col items-start p-6 border-b">
           <Navigation />
         </header>
         <main role="main" className="flex-grow relative flex flex-col mb-16">
           {children}
         </main>
-        <footer className="w-full">
+        <footer className="w-full border-t">
           <Footer />
         </footer>
       </div>

@@ -37,11 +37,9 @@ export default function ProjectPage({ params: { slug } }: ProjectPageProps) {
         <WorkHeader project={project} />
       </motion.div>
 
-      <div className="assets">
-        {project.modules.map((module: Asset[], i: number) => (
-          <AssetModule key={i} data={module} />
-        ))}
-      </div>
+      {project.modules.map((module: Asset[], i: number) => (
+        <AssetModule key={i} data={module} />
+      ))}
     </>
   );
 }

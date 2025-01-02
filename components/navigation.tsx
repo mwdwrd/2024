@@ -1,12 +1,14 @@
 "use client"
 
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import navigation from "@/data/navigation.json";
 import Clock from "@/components/Clock";
 import clsx from "clsx";
 import React, { useMemo } from "react";
+import { motion } from "framer-motion";
+import { ArrowLeft } from "react-feather";
 
 interface NavigationItemProps {
   href: string;
@@ -24,6 +26,8 @@ const NavigationItem = ({ href, label, isActive }: NavigationItemProps) => (
 
 const Navigation = () => {
   const pathname = usePathname();
+  const router = useRouter();
+  const isWorkRoute = pathname.startsWith('/work/');
 
   const mainNav = useMemo(() => navigation.map((link, i) => (
     <NavigationItem
@@ -34,10 +38,35 @@ const Navigation = () => {
     />
   )), [pathname]);
 
+  const handleBack = () => {
+    router.push('/work');
+  };
+
   return (
-    <div className="flex flex-row w-full justify-between gap-6 font-mono text-xs uppercase">
+    <div className="flex flex-row w-full justify-between gap-6 font-mono text-xs px-6 uppercase max-w-screen-2xl mx-auto">
       <div className="flex flex-1 flex-row">
-        <Link href={"/"}>MJW © 2025</Link>
+        {isWorkRoute ? (
+          <motion.button
+            onClick={handleBack}
+            className="flex items-center gap-2 hover:text-foreground/70 transition-colors"
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -20, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ArrowLeft size={14} />
+            <span>Back</span>
+          </motion.button>
+        ) : (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Link href={"/"}>MJW © 2025</Link>
+          </motion.div>
+        )}
       </div>
       <div className="flex flex-1 w-full justify-between gap-6">
         <nav className="flex gap-6 justify-center">

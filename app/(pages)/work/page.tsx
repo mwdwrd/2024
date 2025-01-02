@@ -51,16 +51,18 @@ export default function WorkIndex() {
   return (
     <div className="flex flex-col gap-6">
       
-      <div className="flex flex-row gap-6 p-6 border-t border-b">
-        <div className="flex flex-1">
-          <h2 className="font-sans text-xl leading-none"></h2>
-        </div>
-        <div className="flex flex-1">
-          <Filters categories={categories} active={active} onCategoryChange={(category) => setActive(category)} />
+      <div className="w-full border-b">
+        <div className="flex flex-row w-full gap-6 p-6 max-w-screen-2xl mx-auto">
+          <div className="flex flex-1">
+            <h2 className="font-sans text-xl leading-[0.8] font-semibold tracking-tighter">Work</h2>
+          </div>
+          <div className="flex flex-1">
+            <Filters categories={categories} active={active} onCategoryChange={(category) => setActive(category)} />
+          </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 px-6">
+      <div className="flex flex-col gap-6 px-6 w-full max-w-screen-2xl mx-auto">
         <div className="grid grid-cols-2 gap-6">
           {filteredProjects.map((work, i) => (
             <ProjectTile

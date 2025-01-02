@@ -53,7 +53,7 @@ const AssetRenderer = ({ asset }: { asset: Asset }) => {
 
 export default function AssetModule({ data }: AssetModuleProps) {
   return (
-    <div className="flex justify-between gap-6">
+    <div className="flex justify-between gap-6 max-w-screen-2xl mx-auto">
       {data.map((asset, index) => (
         <div key={index} className="flex-1 text-left">
           <motion.div
