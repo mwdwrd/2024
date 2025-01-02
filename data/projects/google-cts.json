@@ -1,0 +1,74 @@
+{
+  "title": "Circle to Search",
+  "client": "Google",
+  "headline": "Branding<br/>a gesture.",
+  "description": "We branded Google's latest and greatest AI-enabled consumer innovation: “Circle to Search” to ensure the innovation was clearly attributable to Google, and that every time it was featured in marketing — which it was by many partners around the world (e.g., Samsung, Verizon, Motorola, OnePlus etc) — it became an ad for Google. The branded gesture is now influencing the actual product UI and Google's most iconic product: search.",
+  "categories": [
+    "Branding",
+    "Product"
+  ],
+  "slug": "google-cts",
+  "logo": {
+    "type": "google",
+    "size": 16
+  },
+  "thumb": {
+    "type": "video",
+    "src": "/cts-thumb.mov"
+  },
+  "modules": [
+    [
+      {
+        "type": "video",
+        "src": {
+          "webm": "/charli.webm",
+          "mp4": "/charli.mp4"
+        },
+        "format": "standard",
+        "alt": ""
+      },
+      {
+        "type": "video",
+        "src": {
+          "webm": "/circle.webm",
+          "mp4": "/circle.mp4"
+        },
+        "format": "standard",
+        "alt": ""
+      }
+    ],
+    [
+      {
+        "type": "video",
+        "src": {
+          "webm": "/google-cts.webm",
+          "mp4": "/google-cts.mp4"
+        },
+        "format": "widescreen",
+        "alt": ""
+      }
+    ],
+    [
+      {
+        "type": "image",
+        "src": "/cts-1.png",
+        "format": "widescreen",
+        "alt": ""
+      }
+    ],
+    [
+      {
+        "type": "image",
+        "src": "/cts-2.png",
+        "format": "widescreen",
+        "alt": ""
+      },
+      {
+        "type": "image",
+        "src": "/cts-4.png",
+        "format": "widescreen",
+        "alt": ""
+      }
+    ]
+  ]
+}

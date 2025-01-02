@@ -1,23 +1,27 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import workData from "@/data/work.json";
-import s from "./project.module.scss";
-import clsx from "clsx";
-import Block from "@/components/Block";
-import AssetModule from "./(components)/AssetModule";
+import { getProject } from "@/lib/projects";
+import AssetModule from "./(components)/asset-module";
 import { motion } from "framer-motion";
-import Header from "./(components)/Header";
+import WorkHeader from "./(components)/work-header";
+import type { IProject, Asset } from '@/index.d';
 
-const Project = ({
-  params: { slug },
-}: {
-  params: { slug: string };
-}): JSX.Element => {
+interface ProjectPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function ProjectPage({ params: { slug } }: ProjectPageProps) {
   const [project, setProject] = useState<IProject | null>(null);
 
   useEffect(() => {
-    setProject(workData.find((p) => p.slug === slug) || null);
+    const fetchProject = async () => {
+      const projectData = await getProject(slug);
+      setProject(projectData);
+    };
+    fetchProject();
   }, [slug]);
 
   if (!project) return <div>Project not found</div>;
@@ -30,16 +34,14 @@ const Project = ({
         viewport={{ once: true }}
         transition={{ ease: "anticipate", duration: 0.75 }}
       >
-        <Header project={project} />
+        <WorkHeader project={project} />
       </motion.div>
 
-      <div className={s.assets}>
-        {project.modules.map((module, i) => (
+      <div className="assets">
+        {project.modules.map((module: Asset[], i: number) => (
           <AssetModule key={i} data={module} />
         ))}
       </div>
     </>
   );
-};
-
-export default Project;
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Rancho West",
+  "client": "Rancho West",
+  "headline": "A new kind of Western",
+  "description": "",
+  "categories": [
+    "Branding",
+    "Creative Direction",
+    "Design"
+  ],
+  "slug": "rancho-west",
+  "thumb": {
+    "type": "images",
+    "src": [
+      "/rwest1.png",
+      "/rwest3.png",
+      "/rwest0.png",
+      "/rwest2.png"
+    ]
+  },
+  "modules": []
+}

@@ -1,50 +1,55 @@
-declare enum ThumbType {
-  Image = "image",
-  Video = "video",
-}
-
-interface IProject {
+export interface IProject {
   title: string;
-  description: string;
-  slug: string;
   client: string;
-  headline: string;
+  headline?: string;
+  description: string;
   categories: string[];
-  thumb: IThumb;
+  color?: {
+    dark: string;
+    light: string;
+  };
+  slug: string;
+  logo?: {
+    type: string;
+    size: number;
+  };
+  thumb: {
+    type: string;
+    src: string | string[];
+  };
   modules: Asset[][];
 }
 
-interface BaseAsset {
+export interface BaseAsset {
   alt: string;
   format: "cinema" | "widescreen" | "standard" | "photo" | "square";
 }
 
-interface VideoSource {
+export interface VideoSource {
   mp4?: string;
   webm?: string;
 }
 
-interface VideoAsset extends BaseAsset {
+export interface VideoAsset extends BaseAsset {
   type: 'video';
   src: VideoSource;
 }
 
-interface ImageAsset extends BaseAsset {
+export interface ImageAsset extends BaseAsset {
   type: 'image';
   src: string;
 }
 
-type Asset = VideoAsset | ImageAsset;
+export type Asset = VideoAsset | ImageAsset;
 
-
-interface ITile {
+export interface ITile {
   title: string;
   url: string;
   thumb: IThumb;
 }
 
-interface IThumb {
+export interface IThumb {
   type: string;
-  src: string;
+  src: string | string[];
   alt?: string;
 }

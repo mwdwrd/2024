@@ -1,0 +1,31 @@
+{
+  "title": "Queens of the Future",
+  "client": "Nike",
+  "headline": "Letters to their Idols",
+  "description": "Together with Nike, we asked aspiring tennis champions from different New York buroughs to write letters to their tennis idols – Serena and Venus Williams, Simona Halep and more – and documented their tennis journey. We organized a Nike womens-only tennis day on the famed West Fourth street courts and invited our aspiring tennis champions to come play, be surprised by their idols, and share their letters. The day culminated in a Nike tennis clinic with the Queens of the Future. I was the creative director for the video content, and shot a lot of the photogrpahy used to support the campaign.",
+  "categories": [
+    "Campaign",
+    "Creative Direction"
+  ],
+  "slug": "fierce",
+  "logo": {
+    "type": "nike",
+    "size": 32
+  },
+  "thumb": {
+    "type": "image",
+    "src": "/nike.png"
+  },
+  "modules": [
+    [
+      {
+        "type": "video",
+        "src": {
+          "mp4": "/hellvetica.mov"
+        },
+        "format": "widescreen",
+        "alt": "Mothers Day 2024"
+      }
+    ]
+  ]
+}

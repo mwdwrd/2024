@@ -57,8 +57,14 @@ module.exports = {
       fontFamily: {
   			sans: ["var(--font-geist-sans)", "sans-serif"],
   			mono: ["var(--font-geist-mono)", "monospace"],
-  		}
+  		},
+			fontSize: {
+				xs: '11px',
+				sm: '14px',
+				xl: '90px',
+				'2xl': '130px'
+			}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
 }

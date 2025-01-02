@@ -1,0 +1,41 @@
+{
+  "title": "SZA x Unstaged",
+  "client": "American Express",
+  "headline": "An Interactive Live Stream with SZA and Friends",
+  "description": "In partnership with director, Alfred Marroquin, our approach broke out of the confinement of 2020 and entered an ethereal new world. It was an homage to SZA's first album, CTRL, and a celebration of music, spirit, and the earth itself. Captured live and in one take, it featured three chapters, 15 tracks, and cameos by Isaiah Rashad and Travis Scott — who became a buzzworthy surprise after SZA tweeted an invitation to join her just days before shooting. We released behind the scenes NFT's that sold out immediately on our partner platform, fanaply.com",
+  "categories": [
+    "Experience",
+    "Music Video"
+  ],
+  "slug": "amex",
+  "thumb": {
+    "type": "default",
+    "src": "/cts-thumb.mov"
+  },
+  "modules": [
+    [
+      {
+        "type": "video",
+        "src": {
+          "mp4": "/google-cts.mp4"
+        },
+        "format": "widescreen",
+        "alt": "Mothers Day 2024"
+      }
+    ],
+    [
+      {
+        "type": "image",
+        "src": "/3.jpeg",
+        "format": "widescreen",
+        "alt": "Mothers Day 2024"
+      },
+      {
+        "type": "image",
+        "src": "/4.png",
+        "format": "widescreen",
+        "alt": "Mothers Day 2024"
+      }
+    ]
+  ]
+}

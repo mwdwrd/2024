@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation'
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import navigation from "@/data/navigation.json";
 import Clock from "@/components/Clock";
-import s from "./navigation.module.scss";
 import clsx from "clsx";
 import React, { useMemo } from "react";
 
@@ -17,7 +16,7 @@ interface NavigationItemProps {
 
 const NavigationItem = ({ href, label, isActive }: NavigationItemProps) => (
   <React.Fragment>
-    <div className={clsx("", { [s.active]: isActive })}>
+    <div className={clsx("hover:text-foreground transition-colors", isActive ? "text-foreground" : "text-foreground/40")}>
       <Link href={href}>{label}</Link>
     </div>
   </React.Fragment>
@@ -38,7 +37,7 @@ const Navigation = () => {
   return (
     <div className="flex flex-row w-full justify-between gap-6 font-mono text-xs uppercase">
       <div className="flex flex-1 flex-row">
-        <Link href={"/"}>Matty Woodward</Link>
+        <Link href={"/"}>MJW © 2025</Link>
       </div>
       <div className="flex flex-1 w-full justify-between gap-6">
         <nav className="flex gap-6 justify-center">

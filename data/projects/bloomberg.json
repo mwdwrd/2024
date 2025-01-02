@@ -1,0 +1,25 @@
+{
+  "title": "Executive Network",
+  "client": "Bloomberg",
+  "headline": "A New<br/>Executive Network.",
+  "description": "What started out as a brief to connect Bloomberg executives at events turned into a new discussion driven platform that powers Bloombergs collective intelligence.",
+  "categories": [
+    "Product"
+  ],
+  "color": {
+    "dark": "#2400FF",
+    "light": "#2400FF"
+  },
+  "slug": "bloomberg",
+  "logo": {
+    "type": "bloomberg",
+    "size": 70
+  },
+  "thumb": {
+    "type": "image",
+    "src": "/bloomberg.png"
+  },
+  "modules": [
+    []
+  ]
+}

@@ -3,12 +3,15 @@ import s from "./Thumb.module.scss";
 import Image from "next/image";
 import clsx from "clsx";
 import AnimatedThumb from "../AnimatedThumb";
+import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import { aspectRatios } from "@/lib/utils";
+import type { AspectRatioType } from "@/lib/utils";
 
 interface ThumbProps {
   src: string | string[] | any;
   type: "image" | "video" | "images" | string;
   alt: string;
-  format: "cinema" | "widescreen" | "standard" | "photo" | "square";
+  format: AspectRatioType;
 }
 
 const Thumb = ({ src, type, alt, format = "standard" }: ThumbProps) => {
@@ -36,13 +39,13 @@ const Thumb = ({ src, type, alt, format = "standard" }: ThumbProps) => {
 
   return (
     <div
-      className={clsx(s.wrapper, s[format])}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      className="relative rounded-md overflow-hidden"
     >
+      <AspectRatio ratio={aspectRatios[format]}>
       {type === "video" ? (
         <video
-          className={s.video}
           ref={videoRef}
           src={src}
           loop
@@ -50,7 +53,7 @@ const Thumb = ({ src, type, alt, format = "standard" }: ThumbProps) => {
           muted
         />
       ) : type === "image" ? (
-        <Image src={src} alt={alt} fill={true} className={s.image} />
+        <Image src={src} alt={alt} fill={true} className="object-cover" />
       ) : type === "images" ? (
         <AnimatedThumb
           images={src}
@@ -59,6 +62,7 @@ const Thumb = ({ src, type, alt, format = "standard" }: ThumbProps) => {
       ) : (
         <div className={s.default} />
       )}
+      </AspectRatio>
     </div>
   );
 };

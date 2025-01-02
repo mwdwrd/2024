@@ -1,0 +1,41 @@
+{
+  "title": "Brand Launch",
+  "client": "Blip",
+  "categories": [
+    "Branding",
+    "Creative Direction",
+    "Design"
+  ],
+  "description": "",
+  "slug": "blip-launch",
+  "thumb": {
+    "type": "default",
+    "src": "/cts-thumb.mov"
+  },
+  "modules": [
+    [
+      {
+        "type": "video",
+        "src": {
+          "mp4": "/google-cts.mp4"
+        },
+        "format": "widescreen",
+        "alt": "Mothers Day 2024"
+      }
+    ],
+    [
+      {
+        "type": "image",
+        "src": "/3.jpeg",
+        "format": "widescreen",
+        "alt": "Mothers Day 2024"
+      },
+      {
+        "type": "image",
+        "src": "/4.png",
+        "format": "widescreen",
+        "alt": "Mothers Day 2024"
+      }
+    ]
+  ]
+}

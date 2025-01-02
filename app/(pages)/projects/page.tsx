@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
 import projectData from "@/data/projects.json";
 import s from "./page.module.scss";
 import Block from "@/components/Block";

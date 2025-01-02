@@ -1,0 +1,30 @@
+{
+  "title": "MerchAid",
+  "client": "R/GA",
+  "headline": "Designed<br />to help.",
+  "description": "As an agency with a long history in design, R/GA sent one of the world's most-loved fonts to hell for Halloween. Hellvetica: Helvetica, but with hellish kerning. The font was downloaded over 7,300 times, and used to create over 76,000 designs. With 540,000 unique views, and over 210,000,000 impressions, Hellvetica took the internet by storm.Hellvetica was featured in the top publications around the worldsuch as Wired Magazine, Fast Company and DesignBoom. This was a self initiated project with Zac Roif and was supported by R/GA",
+  "categories": [
+    "Activation"
+  ],
+  "slug": "merchaid",
+  "logo": {
+    "type": "rga",
+    "size": 18
+  },
+  "thumb": {
+    "type": "image",
+    "src": "/merchaid1.png"
+  },
+  "modules": [
+    [
+      {
+        "type": "video",
+        "src": {
+          "mp4": "/hellvetica.mov"
+        },
+        "format": "widescreen",
+        "alt": "Mothers Day 2024"
+      }
+    ]
+  ]
+}
