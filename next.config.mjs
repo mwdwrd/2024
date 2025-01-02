@@ -10,6 +10,10 @@ const nextConfig = {
       },
     ],
   },
+  sassOptions: {
+    includePaths: ['./styles'],
+    prependData: `@import "@/styles/mixins.scss";`,
+  },
 };
 
 export default nextConfig;

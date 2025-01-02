@@ -5,7 +5,6 @@ import workData from "@/data/work.json";
 import s from "./page.module.scss";
 import Filters from "./(components)/filters";
 import Tile from "@/components/Tile";
-import Block from "@/components/Block";
 
 const WorkIndex = (): JSX.Element => {
   const [categories, setCategories] = useState<{ [category: string]: number }>({});
@@ -35,18 +34,18 @@ const WorkIndex = (): JSX.Element => {
   }, [active]);
 
   return (
-    <>
+    <div className="flex flex-col gap-6">
       
-      <Block first>
-        <div className={s.title}>
+      <div className="flex flex-row gap-6 p-6 border-t border-b">
+        <div className="flex flex-1">
           <h2 className={s.heading}>Work</h2>
         </div>
-        <div className={s.filters}>
+        <div className="flex flex-1">
           <Filters categories={categories} active={active} onCategoryChange={(category) => setActive(category)} />
         </div>
-      </Block>
+      </div>
 
-      <Block last>
+      <div className="flex flex-col gap-6">
         <div className={s.projects}>
           {filteredProjects.map((work, i) => (
             <Tile
@@ -61,9 +60,9 @@ const WorkIndex = (): JSX.Element => {
             />
           ))}
         </div>
-      </Block>
+      </div>
   
-    </>
+    </div>
   );
 };
 

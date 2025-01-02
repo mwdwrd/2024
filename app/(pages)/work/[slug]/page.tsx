@@ -7,6 +7,7 @@ import clsx from "clsx";
 import Block from "@/components/Block";
 import AssetModule from "./(components)/AssetModule";
 import { motion } from "framer-motion";
+import Header from "./(components)/Header";
 
 const Project = ({
   params: { slug },
@@ -23,46 +24,20 @@ const Project = ({
 
   return (
     <>
-      <Block first>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ ease: "anticipate", duration: 0.75 }}
-        >
-          <div className={clsx(s.headerBlock)}>
-            <div className={clsx(s.row, s.eyebrow)}>
-              <div className={s.col}>{project.client}</div>
-              <div className={s.col}>{project.title}</div>
-            </div>
-            <h2 className={s.heading}>{project.headline}</h2>
-            <div className={s.description}>
-              <div
-                className={s.paragraph}
-                dangerouslySetInnerHTML={{ __html: project.description }}
-              />
-            </div>
-            {/* <div className={s.categories}>
-            {project.categories.map((category, i) => (
-              <React.Fragment key={category}>
-                <span className={s.category}>{category}</span>
-                {i < project.categories.length - 1 && (
-                  <span className={s.divider}> / </span>
-                )}
-              </React.Fragment>
-            ))}
-          </div> */}
-          </div>
-        </motion.div>
-      </Block>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ ease: "anticipate", duration: 0.75 }}
+      >
+        <Header project={project} />
+      </motion.div>
 
-      <Block last>
-        <div className={s.assets}>
-          {project.modules.map((module, i) => (
-            <AssetModule key={i} data={module} />
-          ))}
-        </div>
-      </Block>
+      <div className={s.assets}>
+        {project.modules.map((module, i) => (
+          <AssetModule key={i} data={module} />
+        ))}
+      </div>
     </>
   );
 };

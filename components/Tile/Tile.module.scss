@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: row;
     gap: var(--gutter);
-    justify-content: space-between;
 
     .title, .client, .cats {
       font-size: var(--font-size-tile);

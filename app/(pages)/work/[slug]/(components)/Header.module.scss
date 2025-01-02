@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  padding: var(--gap-4) 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-4);
+  align-self: stretch;
+  
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-2);
+  align-self: stretch;
+  flex: 1;
+
+  .col {
+    flex: 1;
+  }
+}
+
+.titleBlock {
+  display: flex;
+  padding: var(--gap-4) 0px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.eyebrow {
+  font-size: var(--font-size-nav);
+  line-height: var(--font-size-nav);
+  font-weight: var(--font-weight-nav);
+  letter-spacing: var(--font-spacing-nav);
+}
+
+.h1 {
+  @include h1;
+}
+
+.h2 {
+  @include h2;
+}
+
+.h3 {
+  @include h3;
+}
+
+.paragraph {
+  @include paragraph;
+}

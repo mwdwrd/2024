@@ -4,7 +4,7 @@
   align-items: flex-start;
   gap: calc(var(--gutter) * 4);
   border-bottom: 1px solid var(--border-color);
-  padding: calc(var(--gutter) * 4) 0;
+  // padding: calc(var(--gutter) * 4) 0;
 
   &.first {
     border-top: 1px solid var(--border-color);

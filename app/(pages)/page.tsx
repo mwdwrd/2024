@@ -8,7 +8,7 @@ const Home = (): JSX.Element => {
   const projects: IProject[] = workData;
 
   return (
-    <div className={s.wrapper}>
+    <div className="flex flex-col gap-6">
 
       <Block fullsize>
         <h2 className={s.header}>

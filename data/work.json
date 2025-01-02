@@ -2,7 +2,7 @@
   {
     "title": "Circle to Search",
     "client": "Google",
-    "headline": "Branding a gesture that's changing the way we search.",
+    "headline": "Branding a gesture.",
     "description": "We branded Google's latest and greatest AI-enabled consumer innovation: “Circle to Search” to ensure the innovation was clearly attributable to Google, and that every time it was featured in marketing — which it was by many partners around the world (e.g., Samsung, Verizon, Motorola, OnePlus etc) — it became an ad for Google. The branded gesture is now influencing the actual product UI and Google's most iconic product: search.",
     "categories": ["Branding", "Product"],
     "slug": "google-cts",
@@ -11,6 +11,26 @@
       "src": "/cts-thumb.mov"
     },
     "modules": [
+      [
+        {
+          "type": "video",
+          "src": {
+            "webm": "/charli.webm",
+            "mp4": "/charli.mp4"
+          },
+          "format": "standard",
+          "alt": ""
+        },
+        {
+          "type": "video",
+          "src": {
+            "webm": "/circle.webm",
+            "mp4": "/circle.mp4"
+          },
+          "format": "standard",
+          "alt": ""
+        }
+      ],
       [
         {
           "type": "video",
@@ -49,13 +69,61 @@
   {
     "title": "Hellvetica",
     "client": "R/GA",
-    "headline": "Helvetica, but with hellish kerning",
+    "headline": "Kerned in hell.",
     "description": "As an agency with a long history in design, R/GA sent one of the world's most-loved fonts to hell for Halloween. Hellvetica: Helvetica, but with hellish kerning. The font was downloaded over 7,300 times, and used to create over 76,000 designs. With 540,000 unique views, and over 210,000,000 impressions, Hellvetica took the internet by storm.Hellvetica was featured in the top publications around the worldsuch as Wired Magazine, Fast Company and DesignBoom. This was a self initiated project with Zac Roif and was supported by R/GA",
     "categories": ["Activation"],
     "slug": "hellvetica",
     "thumb": {
       "type": "video",
       "src": "/hellvetica.mov"
+    },
+    "modules": [
+      [
+        {
+          "type": "video",
+          "src": {
+            "mp4": "/hellvetica.mov"
+          },
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "MerchAid",
+    "client": "R/GA",
+    "headline": "Designed to help.",
+    "description": "As an agency with a long history in design, R/GA sent one of the world's most-loved fonts to hell for Halloween. Hellvetica: Helvetica, but with hellish kerning. The font was downloaded over 7,300 times, and used to create over 76,000 designs. With 540,000 unique views, and over 210,000,000 impressions, Hellvetica took the internet by storm.Hellvetica was featured in the top publications around the worldsuch as Wired Magazine, Fast Company and DesignBoom. This was a self initiated project with Zac Roif and was supported by R/GA",
+    "categories": ["Activation"],
+    "slug": "merchaid",
+    "thumb": {
+      "type": "image",
+      "src": "/merchaid1.png"
+    },
+    "modules": [
+      [
+        {
+          "type": "video",
+          "src": {
+            "mp4": "/hellvetica.mov"
+          },
+          "format": "widescreen",
+          "alt": "Mothers Day 2024"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "Brand & Product Launch",
+    "client": "Fierce Finance",
+    "headline": "Finance in full view.",
+    "description": "As an agency with a long history in design, R/GA sent one of the world's most-loved fonts to hell for Halloween. Hellvetica: Helvetica, but with hellish kerning. The font was downloaded over 7,300 times, and used to create over 76,000 designs. With 540,000 unique views, and over 210,000,000 impressions, Hellvetica took the internet by storm.Hellvetica was featured in the top publications around the worldsuch as Wired Magazine, Fast Company and DesignBoom. This was a self initiated project with Zac Roif and was supported by R/GA",
+    "categories": ["Activation"],
+    "slug": "fierce",
+    "thumb": {
+      "type": "image",
+      "src": "/fierce.png"
     },
     "modules": [
       [

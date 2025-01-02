@@ -16,39 +16,8 @@
   }
 }
 
-
-
 .video {
   width: 100%;
-}
-
-.headerBlock {
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--gutter) * 4);
-
-  .eyebrow {
-    font-size: var(--font-size-nav);
-    line-height: var(--font-size-nav);
-    font-weight: var(--font-weight-nav);
-    letter-spacing: var(--font-spacing-nav);
-    margin-bottom: calc(var(--gutter) * 8);
-  }
-  .heading {
-    font-size: 80px;
-    line-height: 90%;
-    font-weight: 600;
-    letter-spacing: -0.2rem;
-    max-width: 80%;
-  }
-  .description {
-    max-width: 80%;
-    .paragraph {
-      font-size: 20px;
-      line-height: 135%;
-      font-weight: 400;
-    }
-  }
 }
 
 .assets {

@@ -17,7 +17,7 @@ interface NavigationItemProps {
 
 const NavigationItem = ({ href, label, isActive }: NavigationItemProps) => (
   <React.Fragment>
-    <div className={clsx(s.navItem, { [s.active]: isActive })}>
+    <div className={clsx("", { [s.active]: isActive })}>
       <Link href={href}>{label}</Link>
     </div>
   </React.Fragment>
@@ -36,23 +36,19 @@ const Navigation = () => {
   )), [pathname]);
 
   return (
-    <div className={s.wrapper}>
-      <div className={s.left}>
-        <h1 className={s.logo}>
-          <Link href={"/"}>Temporary</Link>
-        </h1>
+    <div className="flex flex-row w-full justify-between gap-6 font-mono text-xs uppercase">
+      <div className="flex flex-1 flex-row">
+        <Link href={"/"}>Matty Woodward</Link>
       </div>
-      <div className={s.right}>
-        <div className={s.navMenu}>
-          <nav className={s.nav}>
-            {mainNav}
-          </nav>
-          <div className={s.theme}>
-            <span className={s.clock}>
-              <Clock />
-            </span>
-            <ThemeSwitcher />
-          </div>
+      <div className="flex flex-1 w-full justify-between gap-6">
+        <nav className="flex gap-6 justify-center">
+          {mainNav}
+        </nav>
+        <div className="flex gap-6 justify-end">
+          <span className="cursor-default">
+            <Clock />
+          </span>
+          <ThemeSwitcher />
         </div>
       </div>
     </div>

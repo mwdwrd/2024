@@ -9,12 +9,19 @@ $header-height: 80px;
   overflow: hidden;
 
   .header {
-    position: relative;
-    width: 100%;
-    height: $header-height;
-    text-align: center;
-    z-index: 1000;
-    background-color: var(--background);
+    // position: relative;
+    // width: 100%;
+    // height: $header-height;
+    // text-align: center;
+    // z-index: 1000;
+    // background-color: var(--background);
+
+    display: flex;
+    padding: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
   }
 
   .main {
