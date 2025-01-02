@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import styles from "./ThemeSwitcher.module.scss";
 import { Sun, Moon } from 'react-feather';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -16,27 +17,34 @@ const ThemeSwitcher = () => {
   if (!mounted) return null;
 
   const toggleTheme = () => {
-    // Determine if the system prefers a dark mode
     const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    // Determine the current theme or fallback to system preference
     const currentTheme = theme === "light" || theme === "dark" ? theme : prefersDarkMode ? "dark" : "light";
-    // Toggle theme based on the current setting
     const nextTheme = currentTheme === "dark" ? "light" : "dark";
     setTheme(nextTheme);
   };
 
-  const renderIcon = () => {
-    // Determine if the system prefers a dark mode
-    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    // Determine the current theme or fallback to system preference
-    const currentTheme = theme === "light" || theme === "dark" ? theme : prefersDarkMode ? "dark" : "light";
-    return currentTheme === "dark" ? <Sun size={16} /> : <Moon size={16} />;
-  };
+  const currentTheme = theme === "light" || theme === "dark" ? theme : 
+    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark" : "light";
 
   return (
-    <div onClick={toggleTheme} className={styles.button}>
-      {renderIcon()}
-    </div>
+    <motion.div 
+      onClick={toggleTheme} 
+      className={styles.button}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={currentTheme}
+          initial={{ y: -20, opacity: 0, rotate: -90 }}
+          animate={{ y: 0, opacity: 1, rotate: 0 }}
+          exit={{ y: 20, opacity: 0, rotate: 90 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+        >
+          {currentTheme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+        </motion.div>
+      </AnimatePresence>
+    </motion.div>
   );
 };
 
