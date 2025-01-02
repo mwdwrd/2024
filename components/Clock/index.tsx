@@ -1,13 +1,12 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-const Clock: React.FC = () => {
+const Clock = () => {
   const [time, setTime] = useState<string | null>(null);
 
   useEffect(() => {
-    // Set the initial time only after the component has mounted to ensure
-    // it is consistent with subsequent updates and does not cause a mismatch.
     setTime(getCurrentTime());
 
     const timerId = setInterval(() => {
@@ -19,15 +18,26 @@ const Clock: React.FC = () => {
 
   function getCurrentTime(): string {
     const now = new Date();
-    return now.toLocaleTimeString();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    return `${hours}:${minutes}:${seconds}`;
   }
 
-  // Render null or a loading state until the component has mounted and the initial time is set.
   if (time === null) {
-    return null; // Or a placeholder/loading state if preferred.
+    return null;
   }
 
-  return <>{time}</>;
+  return (
+    <motion.div 
+      className="tabular-nums"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+    >
+      {time}
+    </motion.div>
+  );
 };
 
 export default Clock;

@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from 'next/navigation'
-import ThemeSwitcher from "@/components/ThemeSwitcher";
+import ThemeSwitcher from "@/components/theme-switcher";
 import navigation from "@/data/navigation.json";
 import Clock from "@/components/Clock";
 import clsx from "clsx";
 import React, { useMemo } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft } from "react-feather";
 
 interface NavigationItemProps {
@@ -45,28 +45,42 @@ const Navigation = () => {
   return (
     <div className="flex flex-row w-full justify-between gap-6 font-mono text-xs px-6 uppercase max-w-screen-2xl mx-auto">
       <div className="flex flex-1 flex-row">
-        {isWorkRoute ? (
-          <motion.button
-            onClick={handleBack}
-            className="flex items-center gap-2 hover:text-foreground/70 transition-colors"
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -20, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <ArrowLeft size={14} />
-            <span>Back</span>
-          </motion.button>
-        ) : (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Link href={"/"}>MJW © 2025</Link>
-          </motion.div>
-        )}
+        <AnimatePresence mode="wait">
+          {isWorkRoute ? (
+            <motion.button
+              onClick={handleBack}
+              className="flex items-center gap-2 hover:text-foreground/70 transition-colors"
+              initial={{ x: -10, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -10, opacity: 0 }}
+              transition={{ 
+                duration: 0.3,
+                ease: [0.23, 1, 0.32, 1] // Cubic bezier for smooth easing
+              }}
+            >
+              <motion.div
+                initial={{ x: 10 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.2, delay: 0.1 }}
+              >
+                <ArrowLeft size={14} />
+              </motion.div>
+              <span>Back</span>
+            </motion.button>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ 
+                duration: 0.3,
+                ease: [0.23, 1, 0.32, 1]
+              }}
+            >
+              <Link href={"/"}>MJW © 2025</Link>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
       <div className="flex flex-1 w-full justify-between gap-6">
         <nav className="flex gap-6 justify-center">

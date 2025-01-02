@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import styles from "./ThemeSwitcher.module.scss";
 import { Sun, Moon } from 'react-feather';
 import { motion, AnimatePresence } from 'framer-motion';
+import { cn } from "@/lib/utils";
 
-const ThemeSwitcher = () => {
+export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -27,9 +27,12 @@ const ThemeSwitcher = () => {
     (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark" : "light";
 
   return (
-    <motion.div 
-      onClick={toggleTheme} 
-      className={styles.button}
+    <motion.button
+      onClick={toggleTheme}
+      className={cn(
+        "h-4 flex items-center justify-center p-1 rounded",
+        "hover:text-foreground/70 transition-colors"
+      )}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
@@ -44,8 +47,6 @@ const ThemeSwitcher = () => {
           {currentTheme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
         </motion.div>
       </AnimatePresence>
-    </motion.div>
+    </motion.button>
   );
 };
-
-export default ThemeSwitcher;
